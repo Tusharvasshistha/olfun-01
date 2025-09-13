@@ -1,0 +1,626 @@
+
+<!-- meta tags and other links -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OlFun - Gaming Studio </title>
+  <!-- site favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="16x16">
+  <!-- bootstrap 4  -->
+  <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+  <!-- fontawesome 5  -->
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <!-- line-awesome webfont -->
+  <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+  <!-- custom select css -->
+  <link rel="stylesheet" href="assets/css/vendor/nice-select.css">
+  <!-- animate css  -->
+  <link rel="stylesheet" href="assets/css/vendor/animate.min.css">
+  <!-- lightcase css -->
+  <link rel="stylesheet" href="assets/css/vendor/lightcase.css">
+  <!-- slick slider css -->
+  <link rel="stylesheet" href="assets/css/vendor/slick.css">
+  <!-- style main css -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- testimonial -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+ 
+</head>
+  <body>
+
+  
+  <!-- page-wrapper start -->
+  <div class="page-wrapper">
+    <!-- booking modal -->
+    <!-- booking modal -->
+    <div class="enquiry_now_fixed"> Enquire Now</i></div>
+
+    <div class="common-forms">
+        <div class="closecta enqclc">X</div>
+        <div class="top-hds"><h5 class="frmhd">Enquire Now</h5>
+            <div class="bdrline"><span class="pnk"></span> <span class="skybl"></span> <span class="grn"></span></div>
+        </div>
+        <form>
+            <div class="form-group">
+                <input type=text class="form-control" placeholder="Name" required name=name id="username">
+            </div>
+
+            <div class="form-group">
+                <input type=text class="form-control" placeholder="Email" required name=email id="email">
+            </div>
+    
+            <div class="form-group">
+                <input type=text class="form-control" placeholder="Enter City" required name=city id="city">
+            </div>
+    
+    
+            <div class="form-group">
+                <textarea class="form-control" placeholder="Message" required name=message id="message"></textarea>
+            </div>
+    
+    
+            <div class="form-group">
+                <button class="hdred-cta" onclick="whatsapp3();">Submit</button>
+            </div>
+    
+        </form>
+    </div>
+   <div class="modal fade" id="loginModal" tabindex="1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content bg-transparent">
+        <div class="modal-body">
+          <div class="account-area">
+            <h3 class="title mb-4">Welcome to Olfun</h3>
+            <form class="account-form">
+              <div class="form-group">
+                <label>User Name </label>
+                <input type="text" id="name" name="login_email" placeholder="Enter Your Name" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Location</label>
+                <select id="location" name="location">
+                  <option value="">Please select a location</option>
+                  <option value="Omaxe World Street, Faridabad">Omaxe World Sreet, Faridabad</option>
+                  <option value="Indore">Indore</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Date of Booking</label>
+                <input type="date" id="date" name="Date" placeholder="Enter Date of your planned visit" class="form-control">
+              </div>
+              
+              <div class="text-center">
+                <button type="submit" class="cmn-btn" onclick="whatsapp1();">Confirm My Booking</button>
+              </div>
+            </form>
+          </div><!-- account-area end -->
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- header-section start  -->
+<header class="header">
+  <div class="header__bottom">
+    <div class="container">
+      <nav class="navbar navbar-expand-xl align-items-center">
+        <a class="site-logo site-title" href="index.html"><img src="assets/images/logo.png" alt="site-logo"><span class="logo-icon"><i class="flaticon-fire"></i></span></a>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="menu-toggle"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav main-menu ml-auto">
+            <li class="menu_has_children">
+              <a href="index.html">Home</a>              
+            </li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="games.html">Games</a></li>                        
+            <li><a href="#footer">contact</a></li>
+          </ul>
+          <div class="nav-right fa-bounce">
+            <a href="#0" data-toggle="modal" data-target="#loginModal">Book now <i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div><!-- header__bottom end -->
+</header>
+  <!-- header-section end  -->
+
+    <!-- hero section start -->
+    <section class="hero bg_img">
+      <div class="hero__shape">
+        <video id="videoBG" loop="loop" autoplay="autoplay" muted>
+            <source src="assets/images/elements/hero/bg.mp4" type="video/mp4" />
+            <source src="https://youtu.be/5_Blq9W9cT8" type="video/ogg" /> </video>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="hero__content">
+              <span class="hero__sub-title wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.3s">OLFUN</span>
+              <h2 class="hero__title wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">The Future Of VR Gaming</h2>
+              <p class=" wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.7s">Immerse yourself in the ultimate virtual reality gaming experience with our cutting-edge technology.</p>
+              <!--<a href="#" class="cmn-btn wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.9s">play now</a>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero section end -->
+<!-- about section start -->
+<section class="pt-120 pb-120" position-relative overflow-hidden">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="about-content">
+          <div class="section-header has--bg">
+            <div class="header-image style--two"><img src="assets/images/elements/header-el-2.png" alt="image"></div>
+            <h2 class="section-title">About OLFun</h2>
+          </div>
+          <p>Welcome to the world of virtual reality gaming! In a tale that combines passion, determination, and a touch of rebellious spirit, three college dropouts, Sachin Jaspal, Manoj Tyagi, and Ashish Antil, have embarked on an extraordinary journey. Together, they have set out to redefine the gaming industry with their groundbreaking VR gaming console hub.</p>
+          <br><p>In a world where traditional gaming consoles dominate, these three visionaries dared to challenge the status quo. Fueled by their love for gaming and their desire to create immersive experiences, they embarked on a path less traveled. Unencumbered by the constraints of a formal education, they harnessed their creativity and untapped potential to carve their own destiny.</p>
+          <br><p>OLFun promises to be a haven for gamers seeking escapism and thrills. It will offer a vast library of virtual reality games, each meticulously curated to deliver unforgettable experiences. From breathtaking adventures in far-flung galaxies to heart-pounding battles in fantastical worlds, their console hub will be the gateway to a limitless realm of possibilities.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 mt-lg-0 mt-4">
+        <div class="about-thumb">
+          <img src="assets/images/elements/about-player.png" alt="image" class="image-1">
+          <img src="assets/images/elements/about-phone.png" alt="image" class="image-2">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- about section end -->
+<!-- console section -->
+<section class="pt-120 pb-120">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-5">
+        <div class="section-header text-center has--bg">
+          <div class="header-image"><img src="assets/images/elements/header-el.png" alt="image"></div>
+          <h2 class="section-title">Our Consoles</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+          <div id="news-slider" class="owl-carousel">
+              <div class="post-slide">
+                  <div class="post-img">
+                      <img src="assets/images/games/360-2.png">
+                  </div>
+                  <div class="post-content">
+                      <h3 class="post-title"><a href="games.html#360">360 VR Simulater</a></h3>
+                  </div>
+              </div>
+              <div class="post-slide">
+                <div class="post-img">
+                    <img src="assets/images/games/laser-tag.png">
+                </div>
+                <div class="post-content">
+                    <h3 class="post-title"><a href="games.html#laser-tag">Laser Tag</a></h3>
+                </div>
+            </div>
+            <div class="post-slide">
+              <div class="post-img">
+                  <img src="assets/images/games/racing kart.png">
+              </div>
+              <div class="post-content">
+                  <h3 class="post-title"><a href="games.html#race-kart">Racing Kart VR Simulator</a></h3>
+              </div>
+          </div>
+          <div class="post-slide">
+            <div class="post-img">
+                <img src="assets/images/games/fps.png">
+            </div>
+            <div class="post-content">
+                <h3 class="post-title"><a href="games.html#vr-fps">VR FPS Game Simulator</a></h3>
+            </div>
+        </div>
+      </div>
+      <div class="row mt-50">
+        <div class="col-lg-12 text-center">
+          <a href="about.html#all-consoles" class="cmn-btn btn--lg fa-beat">view all Consoles</a>
+        </div>
+      </div>
+  </div>
+</div>
+</section>
+<!-- console section end -->
+<section class="pt-120 pb-100">
+  <div class="row justify-content-center style="margin: 10%;">
+    <div class="col-lg-5">
+      <div class="section-header text-center has--bg">
+        <div class="header-image"><img src="assets/images/elements/header-el-2.png" alt="image"></div>
+        <h2 class="section-title">Enjoy Your Party With US !</h2>
+      </div>
+    </div>
+    <div class="col-lg-12">
+      <div class="about-content">
+        <div class="games-container2" data-index="1">
+          <a class="game-preview" href="games/singularity.html">
+            <div class="background" style="background-image: url(assets/images/gallery/birthday.png)"></div>
+            <div class="title"> <strong class="subtitle"></strong>
+                <h2>Birthday Parties</h2> </div>
+        </a>
+        <a class="game-preview" href="games/zombie-outbreak-origins.html">
+            <div class="background" style="background-image: url(assets/images/gallery/get.png)"></div>
+            <div class="title"> <strong class="subtitle"></strong>
+                <h2>Get Together</h2> </div>
+        </a>
+        <a class="game-preview" href="games/zombie-outbreak-origins.html">
+          <div class="background" style="background-image: url(assets/images/gallery/corp.png)"></div>
+          <div class="title"> <strong class="subtitle"></strong>
+              <h2>Corporate Parties</h2> </div>
+      </a>
+       </div>  
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- game section start -->
+    <section class="pt-120 pb-120">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-5">
+            <div class="section-header text-center has--bg">
+              <div class="header-image"><img src="assets/images/elements/header-el.png" alt="image"></div>
+              <h2 class="section-title">Top Games</h2>
+            </div>
+          </div>
+        </div><!-- row end -->
+        <div class="row mb-none-40">
+          <div class="col-lg-12 mb-40 single-game">
+            <div class="game-card style--two">
+              <div class="game-card__content wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.7s">
+                <div class="game-card__details">
+                  <div class="game-card__info">
+                    <div class="content">
+                      <h3 class="game-card__title"><a href="#">Mission-X</a></h3>
+                      <p>"Mission X" is an immersive VR game featuring TDM, death matches, and intense 1v1 and 1v2 battles. As an elite space agent, conquer alien worlds with your team or face off against foes alone or in outnumbered combat. Get ready for an action-packed cosmic adventure where every move counts!</p>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- game-card__content end -->
+              <div class="game-card__thumb wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.3s">
+                <img src="assets/images/games/missionx.jpg" alt="image">
+              </div>
+              <div class="game-card__footer wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.9s">
+              </div>
+            </div><!-- game-card end -->
+          </div><!-- single-game end -->
+          <div class="col-lg-12 mb-40 single-game">
+            <div class="game-card style--two">
+              <div class="game-card__content wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.7s">
+                <div class="game-card__details">
+                  <div class="game-card__info">
+                    <div class="content">
+                      <h3 class="game-card__title"><a href="#">Under Water Ride</a></h3>
+                      <p> Dive into an Immersive Underwater VR Ride! Experience the wonders of the deep blue sea as you embark on a mesmerizing journey through vibrant coral reefs, encounter majestic marine life, and uncover hidden treasures. Get ready for a short but unforgettable adventure that will leave you in awe of the beauty and magic beneath the waves. Strap on your VR headset and prepare to be amazed by the underwater wonders!</p>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- game-card__content end -->
+              <div class="game-card__thumb wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.3s">
+                <img src="assets/images/games/underwater.jpeg" alt="image">
+              </div>
+              <div class="game-card__footer wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.9s">
+              </div>
+            </div><!-- game-card end -->
+          </div><!-- single-game end -->
+          <div class="col-lg-12 mb-40 single-game">
+            <div class="game-card style--two">
+              <div class="game-card__content wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.7s">
+                <div class="game-card__details">
+                  <div class="game-card__info">
+
+                    <div class="content">
+                      <h3 class="game-card__title"><a href="#">360 Roller Coaster </a></h3>
+                      <p>
+                        Thrill seekers, brace yourselves for the 360 Roller Coaster VR Ride! Experience heart-pumping loops, drops, and twists with breathtaking 360-degree views. An electrifying adventure awaits as you coast through dynamic landscapes and defy gravity like never before! Grab your VR headset and get ready to unleash your inner daredevil on this incredible roller coaster journey.</p>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- game-card__content end -->
+              <div class="game-card__thumb wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.3s">
+                <img src="assets/images/games/roller.jpeg" alt="image">
+              </div>
+              <div class="game-card__footer wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.9s">
+              </div>
+            </div><!-- game-card end -->
+          </div><!-- single-game end -->
+          <div class="col-lg-12 mb-40 single-game">
+            <div class="game-card style--two">
+              <div class="game-card__content wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.7s">
+                <div class="game-card__details">
+                  <div class="game-card__info">
+                    <div class="content">
+                      <h3 class="game-card__title"><a href="#">Formula Car Racing</a></h3>
+                      <p>Gear up for high-speed excitement with Formula Racing VR! Immerse yourself in the driver's seat and experience the adrenaline rush of professional racing. Feel the intensity as you navigate hairpin turns, accelerate on straightaways, and compete against skilled opponents. With realistic graphics and immersive controls, you'll feel like a true racing champion. So, put on your VR headset, grip the virtual steering wheel, and get ready to rev up your engines in this thrilling Formula Racing VR experience! </p>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- game-card__content end -->
+              <div class="game-card__thumb wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.3s">
+                <img src="assets/images/games/formula.png" alt="image">
+              </div>
+            </div><!-- game-card end -->
+          </div><!-- single-game end -->
+        </div>
+        <div class="row mt-50">
+          <div class="col-lg-12 text-center">
+            <a href="games.html#all-games" class="cmn-btn btn--lg fa-beat-fade">view all games</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- game section end -->
+    <!--testonomial-->
+    <section class="pt-120 pb-120">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-5">
+          <div class="section-header text-center has--bg">
+            <div class="header-image"><img src="assets/images/elements/header-el.png" alt="image"></div>
+            <h2 class="section-title">Wall of Love</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12">
+              <div id="testimonial-slider" class="owl-carousel">
+                  <div class="testimonial">
+                      <h3 class="title">Anchal Yadav
+                          <span class="post">Faridabad</span>
+                      </h3>
+                      <p class="description">
+                        Olfun's commitment to excellence shines through in every aspect of their VR gaming experience. From the intuitive controls to the captivating stories, they've mastered the art of immersive gaming
+                      </p>
+                  </div>
+                  <div class="testimonial">
+                      <h3 class="title">Krishna
+                          <span class="post">Indore</span>
+                      </h3>
+                      <p class="description">
+                        Olfun has something for everyone, from casual gamers to hardcore enthusiasts. Their wide selection of games and exclusive consoles make them the go-to choice for anyone looking to dive into the world of VR gaming.
+                      </p>
+                  </div>
+                  <div class="testimonial">
+                      <h3 class="title">Yash Aggarwal
+                          <span class="post">- Delhi</span>
+                      </h3>
+                      <p class="description">
+                        "Olfun's VR games are pure magic. I've never felt more engaged and connected to a virtual world before. Their selection of games ensures you'll never run out of exciting adventures to embark on!"
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  </section>
+    <!-- FAQ -->
+    <section class="">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-5">
+          <div class="section-header text-center has--bg">
+            <div class="header-image"><img src="assets/images/elements/header-el.png" alt="image"></div>
+            <h2 class="section-title">FAQs</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12">
+              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                  <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingOne">
+                          <h4 class="panel-title">
+                              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Are there any age restrictions for playing VR games at your studio?
+                              </a>
+                          </h4>
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="panel-body">
+                              <p>There are no age restrictions for playing VR games at our studio. We welcome people of all ages to enjoy the immersive world of virtual reality gaming. Whether you're young or young at heart, come and have a fantastic time exploring virtual reality at our studio!</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingTwo">
+                          <h4 class="panel-title">
+                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                What is the duration of a typical VR gaming session?
+                              </a>
+                          </h4>
+                      </div>
+                      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                          <div class="panel-body">
+                              <p>The duration of a typical VR gaming session at our studio varies depending on the game. On average, sessions range from 10 to 25 minutes. Each game offers a unique and immersive experience within this timeframe, ensuring you have an exciting and memorable virtual reality gaming session.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingThree">
+                          <h4 class="panel-title">
+                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Are there different game options available to choose from?
+                              </a>
+                          </h4>
+                      </div>
+                      <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                          <div class="panel-body">
+                              <p>Absolutely! We offer a wide range of game options for you to choose from at our studio. Whether you're into action-packed adventures, sports simulations, puzzle-solving challenges, or thrilling horror experiences, we have multiple games available to cater to your preferences and ensure an exciting VR gaming session.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFour">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                              Do you offer multiplayer VR gaming experiences?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                        <div class="panel-body">
+                            <p>Yes, we provide multiplayer VR gaming experiences at our studio. You can team up with friends or other players to embark on cooperative adventures, engage in competitive gameplay, or simply enjoy virtual social interactions. Experience the excitement of multiplayer VR gaming and make unforgettable memories together!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingFive">
+                      <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Can I save my progress in a game and resume it later?
+                          </a>
+                      </h4>
+                  </div>
+                  <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                      <div class="panel-body">
+                          <p>Absolutely! Our VR gaming system allows you to save your progress in a game, allowing you to resume from where you left off during your next session. You can pick up where you left off, continue your adventure, and strive to achieve your gaming goals without any worries about losing your progress.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingSix">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                          Can I rent out the studio for private VR gaming sessions or events?
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                    <div class="panel-body">
+                        <p>Yes, you can rent out our studio for private VR gaming sessions or events. Whether you want to host a birthday party, team-building event, or any other special occasion, we offer options to accommodate your needs. Contact us to discuss availability, pricing, and arrangements for your private VR gaming experience.</p>
+                    </div>
+                </div>
+            </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+    <!-- FAQ end -->
+      <!-- footer section start  -->
+  <footer class="footer-section bg_img" data-background="assets/images/elements/footer.png">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="subscribe-area">
+            <div class="obj"><img src="assets/images/elements/subscribe.png" alt="image"></div>
+            <div class="subscribe-content" style="display:block;">
+              <h2 class="title">We are just a click away</h2>
+              <p>Have any Query,Contact us Now.</p>
+              <form class="subscribe-form">
+                <input type="text" name="Query" id="Query" placeholder="Enter Your Query">
+                <button type="submit" onclick="whatsapp2();">Ask Us</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+<section id="footer">
+      <div class="row footer-top mb-none-50">
+          <div class="col-lg-5 col-sm-6 mb-50">
+              <div class="footer-widget">
+                  <h3 class="footer-widget__title">Our
+Community</h3>
+                  <p>We've created a community that spans
+virtual reality and soft gaming, as well as
+the simulation business.</p>
+              <p>We are currently working in the states of
+Haryana, Delhi NCR, and Punjab.
+</p>
+              <p>And there are plans to develop this
+business from the north to the south, as
+well as from east to west in India</p>
+              </div><!-- footer-widget end -->
+          </div>
+        <div class="col-lg-3 col-sm-6 mb-50">
+          <div class="footer-widget">
+            <h3 class="footer-widget__title">ABOUT</h3>
+            <ul class="short-links">
+                <li><a href="index.html">Home</a></li>
+              <li><a href="About.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+             
+              <li><a href="game-details">Game</a></li>
+            </ul>
+          </div><!-- footer-widget end -->
+        </div>
+       
+        <div class="col-lg-4 col-sm-6 mb-50" style="display:block" >
+          <div class="footer-widget">
+            <h3 class="footer-widget__title">Reach us at</h3>
+            <ul class="short-links">
+              <li><a href="tel:+0987654"><i class="fa-solid fa-phone fa-beat-fade"></i> : 987654321</a></li>
+              <li><i class="fa-brands fa-whatsapp fa-beat-fade"></i> : 987654321</li>
+              <li><a href="https://www.instagram.com/olfun77/"><i class="fa-brands fa-instagram fa-beat-fade"></i> : OLFun</a></li>
+              <li><a href="https://amsvirtualrealtor@gmail.com"><i class="fa-sharp fa-solid fa-envelope fa-beat-fade"></i> : amsvirtualrealtor@gmail.com</a></li>
+              <li style="margin-bottom: 8px;">
+                <a href="https://maps.google.com/?q=Shop no. 47, second floor, Omaxe plaza, Omaxe City, Sonipat, Haryana, 131027"
+                   target="_blank"
+                   style="display: flex; align-items: flex-start; text-decoration: none; color: inherit; margin-left: 2px;">
+                  <i class="fa-solid fa-location-dot fa-beat-fade" style="margin-right: 15px; margin-top: 3px;"></i>
+                  <span>
+                    <strong>Head office:</strong> Company Name: OLFUN<br>
+                    <span style="margin-left: 0;">Add: Shop no. 47, second floor, Omaxe plaza,<br>
+                    Omaxe City, Sonipat, Haryana, 131027</span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div><!-- footer-widget end -->
+        </div>
+        <div class="col-lg-8 col-sm-12 mb-50">
+          <div class="footer-widget">
+            <h3 class="footer-widget__title">We are here</h3>
+              <ul class="social-links justify-content-md-end justify-content-left">
+                  <li><div style="text-decoration:none; overflow:hidden;max-width:100%;width:300px;height:200px;"><div id="embed-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=OMAXE+WORLD+STREET,+Faridabad,+Haryana,+India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="my-codefor-googlemap" href="https://www.bootstrapskins.com/themes" id="make-map-data">premium bootstrap themes</a><style>#embed-map-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}</style></div></li>
+                  <li><div style="text-decoration:none; overflow:hidden;max-width:100%;width:300px;height:200px;"><div id="embed-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=TI+Mall,+Classic+Centre,+Opposite+Treasure+Island,+Race+Course+Road,+Indore,+Madhya+Pradesh,+India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="my-codefor-googlemap" href="https://www.bootstrapskins.com/themes" id="make-map-data">premium bootstrap themes</a><style>#embed-map-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}</style></div></li>
+              </ul>
+          </div><!-- footer-widget end -->
+        </div>
+      </div><!-- footer-top end -->
+      <div class="row footer-bottom align-items-center">
+        <div class="col-lg-7 col-md-6 text-md-left text-center">
+          <p class="copy-right-text">Copyright © 2022. All Rights Reserved By <a href="#0">OLFUN</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  </footer>
+  <!-- footer section end -->
+  </div>
+  <!-- page-wrapper end -->
+  <!-- jQuery library -->
+  <script src="assets/js/vendor/jquery-3.5.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+  <!-- custom select js -->
+  <script src="assets/js/vendor/jquery.nice-select.min.js"></script>
+  <!-- lightcase js -->
+  <script src="assets/js/vendor/lightcase.js"></script>
+  <!-- wow js -->
+  <script src="assets/js/vendor/wow.min.js"></script>
+  <!-- slick slider js -->
+  <script src="assets/js/vendor/slick.min.js"></script>
+  <script src="assets/js/vendor/TweenMax.min.js"></script>
+  <!-- contact js -->
+  <script src="assets/js/contact.js"></script>
+<!-- fontawesome -->
+<script src="https://kit.fontawesome.com/605c029bee.js" crossorigin="anonymous"></script>
+  <script src="assets/js/vendor/jquery.paroller.min.js"></script>
+  <!-- custom js -->
+  <script src="assets/js/app.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+  </body>
+</html>
